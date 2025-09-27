@@ -206,12 +206,12 @@ button:hover {
 }
 
 .profile-photo {
-  width: 180px;       /* make it smaller */
-  height: 180px;      /* keep it square */
-  object-fit: cover;  /* crop it nicely */
-  border-radius: 50%; /* make it round */
+  width: 180px;      
+  height: 180px;      
+  object-fit: cover;  
+  border-radius: 50%; 
   display: block;
-  margin: 0 auto 20px auto; /* center it with some spacing */
+  margin: 0 auto 20px auto; 
 }
 
 .about-container p {
@@ -219,4 +219,55 @@ button:hover {
   margin: 5px 0;
   line-height: 1.6;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+/* Make navbar responsive */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+/* Responsive text and images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
