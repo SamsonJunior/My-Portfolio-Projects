@@ -21,12 +21,12 @@ import os
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x1a5r7spup7#z+s1_)4i^xe06#m+!8nwbpor&-xpvpzh38bx9+'
+SECRET_KEY = os.environ.get("SECRET_KEY","fallback-secret-key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG","False") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['your-app-name.onrender.com']
 
 
 # Application definition
